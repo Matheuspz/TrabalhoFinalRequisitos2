@@ -1,0 +1,122 @@
+Cenário / A1
+
+O restaurante Quintal do Chef gostaria de solicitar o desenvolvimento de uma aplicação integrada de gerenciamento de pedidos que possa facilitar e otimizar todo o nosso fluxo de atendimento e operação interna. Nosso objetivo é oferecer aos clientes uma experiência ágil e moderna, permitindo que façam seus pedidos diretamente pelo celular ou tablets nas mesas, com o sistema enviando essas informações automaticamente para a cozinha, de forma clara e organizada, garantindo que o preparo seja eficiente e os prazos respeitados. Precisamos também de uma solução que permita ao chef e à gerência montar e atualizar o cardápio facilmente, com a possibilidade de controlar a disponibilidade dos pratos em tempo real, refletindo diretamente o estoque disponível.
+Além disso, a aplicação deve contar com um controle automatizado de estoque que acompanhe o consumo de ingredientes conforme os pedidos são realizados, gerando alertas para a equipe quando houver necessidade de reposição, a fim de evitar desperdícios e rupturas. Para melhorar a organização do atendimento, solicitamos funcionalidades que incluam reserva online, lista de espera digital e um painel para que os garçons visualizem o status das mesas e dos pedidos em tempo real. Por fim, gostaríamos que o sistema gerasse relatórios detalhados sobre vendas, pratos mais populares e controle de estoque, auxiliando a equipe administrativa na tomada de decisões estratégicas. Acreditamos que essa solução contribuirá significativamente para a eficiência operacional do Quintal do Chef, além de proporcionar uma experiência diferenciada para nossos clientes.
+
+((((-----ATUALIZAR DESCRIÇÂO GERAL-------)))))
+Aplicação de gerenciamento de pedidos e estoque de um restaurante
+Um software para auxiliar funcionários e clientes do estabelecimento Quintal do Chef sobre fluxo de pedidos, montagem de pedido, gerenciamento de estoque, criação de relatórios, criação de cardápios, entre outros.
+
+-Auxiliar a equipe do restaurante a organizar e acelerar o fluxo de pedidos e reservas dos clientes
+-Auxiliar os cozinheiros a gerenciar a fila de pedidos e o tempo de espera dos mesmos
+-Auxiliar o gerente do estabelecimento a definir o cardápio, criar promoções
+-Facilitar a montagem de pedidos pelos clientes
+
+Escopo:
+-Sistema de gerenciamento e organização do fluxo de pedidos, com atualização em tempo real para cozinha e equipe de atendimento.
+-Ferramenta para os cozinheiros visualizarem, gerenciarem e acompanharem a fila de pedidos e os tempos de preparo.
+-Módulo para o gerente criar, editar e gerenciar o cardápio, incluindo itens, preços e promoções.
+-Painel de acompanhamento para garçons visualizarem status das mesas, pedidos e fluxo de atendimento.
+-Controle de acesso e permissões para diferentes perfis de usuários (cliente, garçom, cozinha, gerente).
+-Funcionalidade para montagem e personalização de pedidos pelo cliente, permitindo escolhas e modificações simples.
+-Histórico e registro de pedidos para análise e melhoria contínua do atendimento.
+
+B)
+	1. Entrevistas Fictícias com Stakeholders
+
+						Entrevista com o Gerente
+Quais são os principais desafios na operação atual do restaurante?
+-Objetivo: Descobrir pela visão do gerente como está o fluxo de trabalho no estabelecimento
+
+Como é feito a produção dos cardápios?
+-Objetivo: Descobrir se existe apenas um tipo de cardápio ou se existe cardápios específicos para certos dias da semana ou horários.
+
+						Entrevista com o Chef de Cozinha
+Como você gostaria de receber os pedidos?
+-Objetivo: Descobrir como os cozinheiros preferem receber os pedidos
+
+Acha necessário visualizar o que está em falta?
+-Objetivo: Descobrir se a equipe da cozinha sente a necessidade de alertas de estoque baixo
+
+						Entrevista com o Garçom
+O que mais atrapalha no atendimento?
+-Objetivo: Descobrir quais os problemas que a equipe de garçons experiencia no dia a dia
+
+Seria útil ver o status das mesas em um painel?
+-Objetivo: Descobrir se a equipe de garçons prefeririam um sistema para visualizar status das mesas.
+
+						Entrevista com um Cliente Recorrente
+Você gostaria de montar seu pedido direto de um tablet?
+-Objetivo: Identificar se os clientes prefeririam um sistema em tablet para o atendimento.
+
+Você gostaria de ter um questionário para avaliar a experiencia do restaurante?
+-Objetivo: Identificar a necessidade de explicar a satisfação do cliente com o estabelecimento.
+
+	2.Técnicas Adicionais Utilizadas
+
+Brainstorming com a equipe de desenvolvimento para descobrir funcionalidades essenciais e adicionais.
+
+Observação do fluxo de atendimento típico para entender gargalos.
+
+	3. Registro de Requisitos coletados
+
+Com base nas repostas das entrevistas e analises com a equipe de desenvolvimento descobrimos que todos os funcionários se sentiriam mais confortáveis no trabalho se tivessem um sistema para auxilia-los com funcionalidades automáticas e alertas específicos, além disso descobrimos que os clientes também gostariam de um sistema para facilitar a solicitar os pedidos e atendimentos.
+
+
+C)
+	1.Requisitos Coletados
+a) Requisitos Funcionais (RF)
+RF01 - O software de permitir ao cliente realizar pedidos.
+RF02 - O software deve permitir ao chef organizar a fila de preparo dos pedidos.
+RF03 - O software deve permitir ao chef visualizar a fila de preparo dos pedidos.
+RF04 - O software deve permitir que o gerente edite o cardápio, incluindo preços, descrições e promoções.
+RF05 - O software deve atualizar automaticamente a disponibilidade dos pratos com base no estoque.
+RF06 - O software deve controlar o consumo de ingredientes conforme os pedidos são processados.
+RF07 - O software deve conter um formulário de avaliação de experiência para os clientes.
+RF08 - O software deve ter um sistema de chamado de garçom pelos clientes
+RF09 - O software deve exibir em painel o status das mesas, pedidos e andamento do serviço para garçons.
+RF10 - O software deve emitir alertas de estoque baixo ou esgotado para a equipe.
+
+b) Requisitos Não Funcionais (RNF)
+RNF01 - O sistema deve ser responsivo, funcionando bem em dispositivos móveis e tablets. (Portabilidade)
+RNF02 - A interface deve ser intuitiva e fácil de usar por todos os tipos de usuários. (Usabilidade)
+RNF03 - O tempo de resposta do sistema deve ser inferior a 2 segundos por operação. (Desempenho)
+RNF04 - O sistema deve garantir alta disponibilidade (acima de 99%). (Disponibilidade)
+RNF05 - O sistema deve ser atualizado sem a necessidade de interrupção dos serviços. (Manutenibilidade)
+RNF06 - Os dados sensíveis devem ser protegidos com criptografia. (Segurança)
+RNF07 - O sistema deve permitir integração com impressoras de pedidos da cozinha. (Compatibilidade)
+RNF08 - O sistema deve manter logs de ações para fins de auditoria e rastreabilidade. (Auditabilidade)
+RNF09 - Deve suportar múltiplos acessos simultâneos sem perda de desempenho. (Escalabilidade)
+RNF10 - A arquitetura do sistema deve ser escalável para possíveis expansões (franquias, novas unidades). (Escalabilidade)
+
+D)
+	1. Protótipo
+
+TELAS
+LOGIN
+TELA CLIENTE
+-Selecionar algo do cardápio
+-Carrinho
+TELA GARÇON
+-Selecionar mesas visualizar
+TELA CHEF
+-Selecionar os pedido dos clientes
+TELA GERENTE
+-Criação de um item de pedido
+
+
+	2. Atores e Casos de Uso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
